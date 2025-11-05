@@ -54,6 +54,8 @@ class SubjList : public List {
         void sortByRange();
         void searchByPassengers(int minP);
         void searchByCargo(double minC);
+
+        static void menu();
 };
 
 #endif

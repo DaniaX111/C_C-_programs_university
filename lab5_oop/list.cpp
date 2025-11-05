@@ -196,10 +196,9 @@ void SubjList::searchByCargo(double minC) {
 }
 
 void SubjList::menu() {
-    List list;
-    SubjList subjlist;
-
+    SubjList list;  // Единый список для всех объектов
     int choice;
+
     while (true) {
         std::cout << "\n1. Добавить автомобиль"
                   << "\n2. Добавить самолет"
@@ -212,45 +211,55 @@ void SubjList::menu() {
                   << "\n9. Очистить"
                   << "\n10. Выйти"
                   << "\nВаш выбор: ";
-
         std::cin >> choice;
 
         switch (choice) {
-            case 1:
-                list.add(new Car());
+            case 1: {
+                Car* car = new Car();
+                car->input();
+                list.add(car);
                 break;
-            case 2:
-                list.add(new Plane());
+            }
+            case 2: {
+                Plane* plane = new Plane();
+                plane->input();
+                list.add(plane);
                 break;
-            case 3:
-                list.add(new Ship());
+            }
+            case 3: {
+                Ship* ship = new Ship();
+                ship->input();
+                list.add(ship);
                 break;
+            }
             case 4:
                 list.print();
                 break;
             case 5:
-                subjlist.sortBySpeed();
+                list.sortBySpeed();
+                std::cout << "Список отсортирован по скорости.\n";
                 break;
             case 6:
-                subjlist.sortByRange();
+                list.sortByRange();
+                std::cout << "Список отсортирован по дальности.\n";
                 break;
             case 7: {
                 int minP;
                 std::cout << "Мин. пассажиров: ";
                 std::cin >> minP;
-                subjlist.searchByPassengers(minP);
+                list.searchByPassengers(minP);
                 break;
             }
             case 8: {
                 double minC;
                 std::cout << "Мин. груз (т/кг): ";
                 std::cin >> minC;
-                subjlist.searchByCargo(minC);
+                list.searchByCargo(minC);
                 break;
             }
             case 9:
                 list.clear();
-                subjlist.clear();
+                std::cout << "Список очищен.\n";
                 break;
             case 10:
                 return;
