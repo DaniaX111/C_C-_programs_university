@@ -39,8 +39,9 @@ void menu(List& list, SubjList& subjlist) {
 }
 
 int main() {
-    List list;
-    SubjList subjlist;
-    menu(list, subjlist);
+    // List list;
+    // SubjList subjlist;
+    // menu(list, subjlist);
+    SubjList::menu();
     return 0;
 }
