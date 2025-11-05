@@ -1,0 +1,20 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/daniilsmaznov/Documents/Алгоритмизация и программирование/double_list_2"
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002F60, symSize: 0x38 }
+  - { offset: 0x8D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002F60, symSize: 0x38 }
+  - { offset: 0xB5, size: 0x8, addend: 0x0, symName: _menu, symObjAddr: 0x38, symBinAddr: 0x100002F98, symSize: 0x304 }
+  - { offset: 0x13C, size: 0x8, addend: 0x0, symName: _createList, symObjAddr: 0x368, symBinAddr: 0x1000032C8, symSize: 0x44 }
+  - { offset: 0x164, size: 0x8, addend: 0x0, symName: _Clear, symObjAddr: 0x3AC, symBinAddr: 0x10000330C, symSize: 0x7C }
+  - { offset: 0x1A4, size: 0x8, addend: 0x0, symName: _Add, symObjAddr: 0x428, symBinAddr: 0x100003388, symSize: 0xA4 }
+  - { offset: 0x1D6, size: 0x8, addend: 0x0, symName: _GetIndex, symObjAddr: 0x4CC, symBinAddr: 0x10000342C, symSize: 0x8C }
+  - { offset: 0x228, size: 0x8, addend: 0x0, symName: _GetItem, symObjAddr: 0x558, symBinAddr: 0x1000034B8, symSize: 0x80 }
+  - { offset: 0x288, size: 0x8, addend: 0x0, symName: _popFront, symObjAddr: 0x5D8, symBinAddr: 0x100003538, symSize: 0x9C }
+  - { offset: 0x2BA, size: 0x8, addend: 0x0, symName: _popBack, symObjAddr: 0x674, symBinAddr: 0x1000035D4, symSize: 0x9C }
+  - { offset: 0x2EC, size: 0x8, addend: 0x0, symName: _print_list, symObjAddr: 0x710, symBinAddr: 0x100003670, symSize: 0x8C }
+  - { offset: 0x31E, size: 0x8, addend: 0x0, symName: _Count, symObjAddr: 0x79C, symBinAddr: 0x1000036FC, symSize: 0x64 }
+  - { offset: 0x362, size: 0x8, addend: 0x0, symName: _Insert, symObjAddr: 0x800, symBinAddr: 0x100003760, symSize: 0xE8 }
+  - { offset: 0x3CC, size: 0x8, addend: 0x0, symName: _Remove, symObjAddr: 0x8E8, symBinAddr: 0x100003848, symSize: 0x168 }
+  - { offset: 0x410, size: 0x8, addend: 0x0, symName: _Delete, symObjAddr: 0xA50, symBinAddr: 0x1000039B0, symSize: 0x90 }
+...
